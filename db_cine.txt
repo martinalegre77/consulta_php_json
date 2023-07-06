@@ -1,0 +1,47 @@
+﻿-- Alumno: Luis martin Alegre
+-- Desarrollo Web
+-- Creación de la base de datos para el TP 4
+
+-- Creando la base dde datos
+
+CREATE DATABASE cine;
+USE cine;
+
+-- Creando la tabla peliculas
+
+CREATE TABLE peliculas ( 
+id_peli INT AUTO_INCREMENT, 
+nombre VARCHAR(45) NOT NULL, 
+protagonista VARCHAR(45) NOT NULL, 
+director VARCHAR(45) NOT NULL, 
+anio INT(4) NOT NULL, 
+genero VARCHAR(30) NOT NULL, 
+pais VARCHAR(30) NOT NULL, 
+PRIMARY KEY (id_peli) )
+
+-- Ingresando datos a la tabla 'peliculas'
+
+-- (10 filas)
+
+INSERT INTO peliculas (nombre, protagonista, director, anio, genero, pais) 
+VALUES ('John Wick', 'Keanu Reev', 'Chad Stahelski', 2014, 'Acción', 'Estados Unidos'),
+('Ant-Man y la Avispa: Quantumanía', 'Paul Rudd', 'Peyton Reed', 2023, 'Aventura/ Ciencia ficción', 'Estados Unidos'),
+('Black Panther : Wakanda Forever', 'Letitia Wright', 'Ryan Coogler', 2022, 'Acción/ Aventura', 'Estados Unidos'),
+('Joker', 'Joaquin Phoenix', 'Todd Phillips', 2019, 'Thrillers','Estados Unidos'),
+('Jurassic World: Dominion', 'Chris Pratt', 'Colin Trevorrow', 2022, 'Acción/- Aventura', 'Estados Unidos'),
+('Granizo', 'Guillermo Francella', 'Marcos Carnevale', 2022, 'Comedia', 'Argentina'),
+('Togo', 'Willem Dafoe', 'Ericson Core', 2019, 'Histórico', 'Estados Unidos'),
+('Los descendientes 3', 'Dove Cameron', 'Kenny Ortega', 2019, 'Fantástica/ Musical', 'Estados Unidos'),
+('Titanic', 'Leonardo Di Caprio', 'James Cameron', 1997, 'Romántica/ Drama', 'Estados Unidos'),
+('Aladdín', 'Will Smith', 'Guy Ritchie', 2019, 'Fantásticas - Romántica', 'Estados Unidos')
+;
+
+-- ( + 5 filas)
+
+INSERT INTO peliculas (nombre, protagonista, director, anio, genero, pais) 
+VALUES ('The Batman', 'Robert Pattinson', 'Matt Reeves', 2022, 'Misterio/ Thrillers', 'Estados Unidos'),
+('En guerra con mi abuelo', 'Robert De Niro', 'Tim Hill', 2020, 'Comedia', 'Estados Unidos'),
+('Jojo Rabbit', 'Roman Griffin Davis', 'Taika Waititi', 2019, 'Bélico/ Drama', 'Estados Unidos'),
+('Venom: Habrá Matanza', 'Tom Hardy', 'Andy Serkis', 2021, 'Acción/- Ciencia ficción', 'Estados Unidos'),
+('El robo del siglo', 'Guillermo Francella', 'Ariel Winograd', 2020, 'Comedia/ Crimen', 'Argentina')
+;
